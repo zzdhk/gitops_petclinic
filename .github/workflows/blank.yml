@@ -65,7 +65,7 @@ jobs:
     # 이 이미지가 빌드되고, 지정된 ECR 리포지토리에 푸시됩니다.
     - name: Build, tag, and push image to Amazon ECR
       env:
-        ECR_REGISTRY: 514090833954.dkr.ecr.us-west-2.amazonaws.com/juyeon-k8s-cluster-v2-repo
+        ECR_REGISTRY: 514090833954.dkr.ecr.us-west-2.amazonaws.com
         ECR_REPOSITORY: juyeon-k8s-cluster-v2-repo
         IMAGE_TAG: ${{ github.sha }}
       run: |
